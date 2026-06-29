@@ -1,0 +1,38 @@
+[
+  {
+    "id": "global-water-footprint",
+    "title": "Global Water Footprint Accounting",
+    "summary": "Mapping the spatial and temporal patterns of freshwater consumption embedded in goods, crops, and supply chains, and tracing the drivers behind shifting demand.",
+    "icon": "drop",
+    "tags": ["Water Footprint", "Global Scale"],
+    "link": "#",
+    "status": "ongoing"
+  },
+  {
+    "id": "agri-water-productivity",
+    "title": "Agricultural Water Productivity",
+    "summary": "Benchmarking how efficiently crops convert water into yield across regions and management practices, to identify where productivity gains are most achievable.",
+    "icon": "crop",
+    "tags": ["Agriculture", "Irrigation"],
+    "link": "#",
+    "status": "ongoing"
+  },
+  {
+    "id": "water-scarcity-indicators",
+    "title": "Water Scarcity & Risk Indicators",
+    "summary": "Examining how the choice of indicator and temporal aggregation method changes our read on where and when water scarcity occurs — and what that means for policy.",
+    "icon": "map",
+    "tags": ["Water Scarcity", "Methods"],
+    "link": "#",
+    "status": "ongoing"
+  },
+  {
+    "id": "food-energy-water-nexus",
+    "title": "Food–Energy–Water Nexus",
+    "summary": "Studying how water, energy, and food systems interact and compete for the same finite resources, with an eye toward sustainable trade-offs.",
+    "icon": "network",
+    "tags": ["Nexus", "Sustainability"],
+    "link": "#",
+    "status": "ongoing"
+  }
+]

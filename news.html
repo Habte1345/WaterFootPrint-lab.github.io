@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News — Water Footprint Lab</title>
+<meta name="description" content="Announcements, publications, and milestones from the Water Footprint Lab at the University of Alabama.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#102A38"/>
+          <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#7FC3C6" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#1C7C82" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="brand-text"><strong>Water Footprint Lab</strong><span>University of Alabama</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="news.html">News</a>
+      <a href="publications.html">Publications</a>
+      <a href="positions.html">Positions</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">From the lab</span>
+      <h1>News</h1>
+      <p class="lede">Announcements, papers, talks, and milestones — updated as they happen.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="news-list" id="news-list" style="max-width:780px;">
+        <p class="state-msg">Loading news…</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <svg width="28" height="28" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#7FC3C6"/>
+          </svg>
+          <strong>Water Footprint Lab</strong>
+        </div>
+        <p style="max-width:32ch; color:#A9BDB8;">Department of Civil, Construction & Environmental Engineering, The University of Alabama, Tuscaloosa, AL.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <div class="footer-list">
+          <a href="projects.html">Projects</a>
+          <a href="team.html">Team</a>
+          <a href="news.html">News</a>
+          <a href="publications.html">Publications</a>
+          <a href="positions.html">Positions</a>
+        </div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <div class="footer-list">
+          <a href="mailto:mesfin.mekonnen@ua.edu">mesfin.mekonnen@ua.edu</a>
+          <a href="https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/" target="_blank" rel="noopener">UA faculty profile</a>
+          <a href="https://github.com/WaterFootPrint-lab" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Water Footprint Lab, The University of Alabama</span>
+      <span>Built &amp; maintained by the lab team</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  renderNewsFull();
+</script>
+</body>
+</html>
