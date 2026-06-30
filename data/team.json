@@ -28,6 +28,19 @@
       },
       "status": "Ongoing"
     },
+
+        {
+      "name": "Swatantra Sharma",
+      "role": "Ph.D. Student",
+      "focus": "Research focus: [add \u2014 e.g. remote sensing of irrigation water use]",
+      "photo": "assets/img/swatantra-sharma.svg",
+      "links": {
+        "email": "",
+        "scholar": ""
+      },
+      "status": "Ongoing"
+    },
+
     {
       "name": "Mahlet Melaku",
       "role": "Ph.D. Student (2021-2026)",
@@ -60,17 +73,7 @@
         "scholar": ""
       },
       "status": "Graduated"
-    },
-    {
-      "name": "Swatantra Sharma",
-      "role": "Ph.D. Student",
-      "focus": "Research focus: [add \u2014 e.g. remote sensing of irrigation water use]",
-      "photo": "assets/img/swatantra-sharma.svg",
-      "links": {
-        "email": "",
-        "scholar": ""
-      },
-      "status": "Ongoing"
     }
+
   ]
 }
