@@ -24,6 +24,13 @@
       "photo": "assets/img/avatar-1.svg",
       "links": { "email": "", "scholar": "" }
     },
+        {
+      "name": "Swatantra Sharma",
+      "role": "Ph.D. Student",
+      "focus": "Research focus: [add — e.g. remote sensing of irrigation water use]",
+      "photo": "assets/img/avatar-5.svg",
+      "links": { "email": "", "scholar": "" }
+    },
     {
       "name": "Mahlet Melaku",
       "role": "Ph.D (Graduated)",
@@ -44,13 +51,7 @@
       "focus": "Research focus: [add — e.g. food-energy-water nexus]",
       "photo": "assets/img/avatar-4.svg",
       "links": { "email": "", "scholar": "" }
-    },
-    {
-      "name": "Swatantra Sharma",
-      "role": "Ph.D. Student",
-      "focus": "Research focus: [add — e.g. remote sensing of irrigation water use]",
-      "photo": "assets/img/avatar-5.svg",
-      "links": { "email": "", "scholar": "" }
     }
+
   ]
 }
