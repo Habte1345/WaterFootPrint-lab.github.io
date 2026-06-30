@@ -71,9 +71,17 @@
     <div class="wrap">
       <span class="section-label">Research Highlights</span>
       <h2>From the Team</h2>
-      <p>Recent figures and findings from the lab's published work — click any entry for the full caption and a link to the paper.</p>
-      <div class="highlights-list" id="highlights-grid" style="margin-top:1.8rem;">
-        <p class="state-msg">Loading highlights…</p>
+      <p>Recent figures and findings from the lab's published work — scroll or click an arrow to browse, click any entry for the full caption and a link to the paper.</p>
+      <div class="highlights-scroll-wrap" style="margin-top:1.8rem;">
+        <button class="gallery-arrow prev" aria-label="Scroll left">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <div class="highlights-list" id="highlights-grid">
+          <p class="state-msg">Loading highlights…</p>
+        </div>
+        <button class="gallery-arrow next" aria-label="Scroll right">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
       </div>
     </div>
   </section>
