@@ -19,28 +19,28 @@
   "students": [
     {
       "name": "Habtamu Tamiru",
-      "role": "Ph.D. Student",
+      "role": "Ph.D. candidate",
       "focus": "Research focus: [add — e.g. global water footprint accounting]",
       "photo": "assets/img/avatar-1.svg",
       "links": { "email": "", "scholar": "" }
     },
     {
       "name": "Mahlet Melaku",
-      "role": "Ph.D. Student",
+      "role": "Ph.D (Graduated)",
       "focus": "Research focus: [add — e.g. agricultural water productivity]",
       "photo": "assets/img/avatar-2.svg",
       "links": { "email": "", "scholar": "" }
     },
     {
       "name": "Betelhem Demeke",
-      "role": "Ph.D. Student",
+      "role": "Ph.D. (Graduated)",
       "focus": "Research focus: [add — e.g. water scarcity indicators]",
       "photo": "assets/img/avatar-3.svg",
       "links": { "email": "", "scholar": "" }
     },
     {
       "name": "Fitsume Teshome",
-      "role": "Ph.D. Student",
+      "role": "Ph.D.(Graduated)",
       "focus": "Research focus: [add — e.g. food-energy-water nexus]",
       "photo": "assets/img/avatar-4.svg",
       "links": { "email": "", "scholar": "" }
