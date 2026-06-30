@@ -41,6 +41,19 @@
       "status": "Ongoing"
     },
 
+        {
+      "name": "Betelhem Demeke",
+      "role": "Ph.D. Student (2021-2026)",
+      "focus": "Research focus: [add \u2014 e.g. water scarcity indicators]",
+      "photo": "assets/img/betelhem-demeke.svg",
+      "links": {
+        "email": "",
+        "scholar": ""
+      },
+      "status": "Graduated"
+    },
+
+
     {
       "name": "Mahlet Melaku",
       "role": "Ph.D. Student (2021-2026)",
@@ -52,17 +65,7 @@
       },
       "status": "Graduated"
     },
-    {
-      "name": "Betelhem Demeke",
-      "role": "Ph.D. Student (2021-2026)",
-      "focus": "Research focus: [add \u2014 e.g. water scarcity indicators]",
-      "photo": "assets/img/betelhem-demeke.svg",
-      "links": {
-        "email": "",
-        "scholar": ""
-      },
-      "status": "Graduated"
-    },
+
     {
       "name": "Fitsume Teshome",
       "role": "Ph.D. Student (2021-2025)",
