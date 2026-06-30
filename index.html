@@ -6,167 +6,117 @@
 <title>Water Footprint Lab — University of Alabama</title>
 <meta name="description" content="The Water Footprint Lab at the University of Alabama studies global water footprints, water scarcity, and the food-energy-water nexus, led by Dr. Mesfin Mekonnen.">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="wrap nav">
+  <div class="nav">
     <a class="brand" href="index.html">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-          <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#102A38"/>
-          <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#7FC3C6" stroke-width="2.4" stroke-linecap="round"/>
-          <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#1C7C82" stroke-width="2.4" stroke-linecap="round"/>
-        </svg>
+      <svg class="brand-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#124080"/>
+        <path d="M16 35c4-7 9-11 16-11s12 4 16 11" fill="none" stroke="#1A5FA8" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M20 44c3-4.5 7-7 12-7s9 2.5 12 7" fill="none" stroke="#5B9FD4" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+      <span>
+        <span class="brand-name">Water Footprint Lab</span>
+        <span class="brand-sub">University of Alabama</span>
       </span>
-      <span class="brand-text"><strong>Water Footprint Lab</strong><span>University of Alabama</span></span>
     </a>
     <button class="nav-toggle" aria-label="Toggle navigation">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="team.html">Team</a>
-      <a href="news.html">News</a>
-      <a href="publications.html">Publications</a>
-      <a href="positions.html">Positions</a>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="positions.html">Positions</a></li>
+    </ul>
   </div>
 </header>
 
 <main>
 
-  <!-- ===================== HERO ===================== -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow">Water Security Research Group · UA Engineering</span>
-        <h1>Tracing water<br>through the systems<br>that <em>move</em> it.</h1>
-        <p class="lede">The Water Footprint Lab studies how much water stands behind the food, energy, and goods we use — and what that means for water security, ecosystems, and people, from local watersheds to the global scale.</p>
-        <div class="btn-row">
-          <a class="btn" href="projects.html">View our projects</a>
-          <a class="btn btn--ghost" href="positions.html">Join the lab</a>
-        </div>
-        <div class="hero-meta">
-          <div><span class="num mono">5</span><span class="lbl">Ph.D. researchers</span></div>
-          <div><span class="num mono">70+</span><span class="lbl">Peer-reviewed papers (PI)</span></div>
-          <div><span class="num mono">Est. 2020</span><span class="lbl">at the University of Alabama</span></div>
-        </div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <img src="assets/img/hero-contour.svg" alt="">
+    <div class="wrap" style="text-align:center;">
+      <h1>Water Footprint Lab</h1>
+      <p>We study how much water stands behind the food, energy, and goods we use — and what that means for water security, ecosystems, and people worldwide.</p>
+      <div class="hero-btns">
+        <a class="btn" href="projects.html">Our Research</a>
+        <a class="btn btn-outline" href="team.html">Meet the Team</a>
       </div>
     </div>
   </section>
 
-  <!-- ===================== RESEARCH QUESTIONS ===================== -->
-  <section class="wrap">
-    <div class="questions reveal">
-      <div class="question">
-        <span class="qnum mono">01</span>
-        <h3>Where, and why?</h3>
-        <p>What are the spatial and temporal patterns of the global water footprint, and what drives them?</p>
-      </div>
-      <div class="question">
-        <span class="qnum mono">02</span>
-        <h3>What's the cost?</h3>
-        <p>How do current water-use practices affect the water cycle, and what does that mean for human and ecosystem water security?</p>
-      </div>
-      <div class="question">
-        <span class="qnum mono">03</span>
-        <h3>What's sustainable?</h3>
-        <p>How can growing global water demand be met while minimizing harm to the environment that supplies it?</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== PI / ABOUT ===================== -->
-  <section class="section">
-    <div class="wrap pi-grid reveal" id="pi-summary">
-      <!-- populated by js/main.js → renderPISummary -->
-      <div class="pi-photo"><img src="assets/img/pi-photo.svg" alt="Placeholder portrait" loading="lazy"></div>
-      <div><p class="state-msg">Loading principal investigator…</p></div>
-    </div>
-  </section>
-
-  <!-- ===================== PROJECTS ===================== -->
-  <section class="section section--alt">
-    <div class="wrap">
-      <div class="section-head section-head--split">
-        <div>
-          <span class="eyebrow">What we work on</span>
-          <h2>Featured projects</h2>
-        </div>
-        <a class="btn btn--ghost" href="projects.html">All projects</a>
-      </div>
-      <div class="grid grid-3" id="project-preview">
-        <p class="state-msg">Loading projects…</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== NEWS ===================== -->
+  <!-- ABOUT THE LAB -->
   <section class="section">
     <div class="wrap">
-      <div class="section-head section-head--split">
-        <div>
-          <span class="eyebrow">From the lab</span>
-          <h2>Latest news</h2>
-        </div>
-        <a class="btn btn--ghost" href="news.html">All news</a>
-      </div>
-      <div class="news-list" id="news-preview">
-        <p class="state-msg">Loading news…</p>
-      </div>
+      <span class="section-label">About</span>
+      <h2>About the Lab</h2>
+      <p>The Water Footprint Lab is part of the Department of Civil, Construction and Environmental Engineering at The University of Alabama, led by Dr. Mesfin Mekonnen. Our research focuses on the relationship between human activity and freshwater resources — mapping water footprints, assessing scarcity, and exploring pathways to sustainable water use at local, regional, and global scales.</p>
+      <p>Dr. Mekonnen is a Clarivate Highly Cited Researcher and has published over 70 peer-reviewed papers in leading journals including <em>Science</em>, <em>Nature</em>, and <em>PNAS</em>.</p>
+      <p><a href="team.html">Meet the full team →</a></p>
     </div>
   </section>
 
-  <!-- ===================== TEAM ===================== -->
-  <section class="section section--alt">
+  <!-- RESEARCH QUESTIONS -->
+  <section class="section section--shaded">
     <div class="wrap">
-      <div class="section-head section-head--split">
-        <div>
-          <span class="eyebrow">Who we are</span>
-          <h2>The team</h2>
+      <span class="section-label">Research Focus</span>
+      <h2>Core Research Questions</h2>
+      <div class="questions">
+        <div class="question-item">
+          <span class="question-num">01</span>
+          <h3>Where, and why?</h3>
+          <p>What are the spatial and temporal patterns of the global water footprint, and what drives them?</p>
         </div>
-        <a class="btn btn--ghost" href="team.html">Meet everyone</a>
-      </div>
-      <div class="team-preview-strip" id="team-preview">
-        <p class="state-msg">Loading team…</p>
+        <div class="question-item">
+          <span class="question-num">02</span>
+          <h3>What is the cost?</h3>
+          <p>How do current water-use practices affect the water cycle, and what does that mean for human and ecosystem water security?</p>
+        </div>
+        <div class="question-item">
+          <span class="question-num">03</span>
+          <h3>What is sustainable?</h3>
+          <p>How can growing global water demand be met while minimizing harm to the environment that supplies it?</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ===================== PUBLICATIONS ===================== -->
+  <!-- EXPLORE -->
   <section class="section">
     <div class="wrap">
-      <div class="section-head section-head--split">
-        <div>
-          <span class="eyebrow">Selected output</span>
-          <h2>Recent publications</h2>
-        </div>
-        <a class="btn btn--ghost" href="publications.html">Full list</a>
-      </div>
-      <div class="pub-list" id="pub-preview">
-        <p class="state-msg">Loading publications…</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== JOIN ===================== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="join-band reveal">
-        <div>
-          <h2>We're growing the lab.</h2>
-          <p id="open-positions-badge">Checking current openings…</p>
-        </div>
-        <a class="btn btn--on-dark" href="positions.html">See open positions</a>
+      <span class="section-label">Explore</span>
+      <h2>Explore the Lab</h2>
+      <div class="quicklinks">
+        <a class="quicklink-card" href="projects.html">
+          <strong>Projects</strong>
+          <span>Ongoing research on water footprints, scarcity, and the food-energy-water nexus</span>
+        </a>
+        <a class="quicklink-card" href="team.html">
+          <strong>Team</strong>
+          <span>Dr. Mekonnen and the Ph.D. researchers in the lab</span>
+        </a>
+        <a class="quicklink-card" href="news.html">
+          <strong>News</strong>
+          <span>Latest announcements, papers, and milestones</span>
+        </a>
+        <a class="quicklink-card" href="publications.html">
+          <strong>Publications</strong>
+          <span>Peer-reviewed papers and selected works</span>
+        </a>
+        <a class="quicklink-card" href="positions.html">
+          <strong>Positions</strong>
+          <span>Open Ph.D. and research opportunities in the lab</span>
+        </a>
+        <a class="quicklink-card" href="mailto:mesfin.mekonnen@ua.edu">
+          <strong>Contact</strong>
+          <span>Reach Dr. Mekonnen directly by email</span>
+        </a>
       </div>
     </div>
   </section>
@@ -174,52 +124,36 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-brand">
-          <svg width="28" height="28" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-            <path d="M32 6c9 12 18 22 18 33a18 18 0 1 1-36 0c0-11 9-21 18-33Z" fill="#7FC3C6"/>
-          </svg>
-          <strong>Water Footprint Lab</strong>
-        </div>
-        <p style="max-width:32ch; color:#A9BDB8;">Department of Civil, Construction & Environmental Engineering, The University of Alabama, Tuscaloosa, AL.</p>
-      </div>
-      <div>
-        <h4>Site</h4>
-        <div class="footer-list">
-          <a href="projects.html">Projects</a>
-          <a href="team.html">Team</a>
-          <a href="news.html">News</a>
-          <a href="publications.html">Publications</a>
-          <a href="positions.html">Positions</a>
-        </div>
-      </div>
-      <div>
-        <h4>Contact</h4>
-        <div class="footer-list">
-          <a href="mailto:mesfin.mekonnen@ua.edu">mesfin.mekonnen@ua.edu</a>
-          <a href="https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/" target="_blank" rel="noopener">UA faculty profile</a>
-          <a href="https://github.com/WaterFootPrint-lab" target="_blank" rel="noopener">GitHub</a>
-        </div>
-      </div>
+  <div class="footer-inner">
+    <div>
+      <span class="footer-name">Water Footprint Lab</span>
+      <p>Department of Civil, Construction & Environmental Engineering<br>The University of Alabama, Tuscaloosa, AL</p>
     </div>
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Water Footprint Lab, The University of Alabama</span>
-      <span>Built &amp; maintained by the lab team</span>
+    <div>
+      <h4>Pages</h4>
+      <ul class="footer-links">
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="positions.html">Positions</a></li>
+      </ul>
     </div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:mesfin.mekonnen@ua.edu">mesfin.mekonnen@ua.edu</a></li>
+        <li><a href="https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/" target="_blank" rel="noopener">UA Faculty Profile</a></li>
+        <li><a href="https://github.com/WaterFootPrint-lab" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © <span id="yr"></span> Water Footprint Lab, The University of Alabama
   </div>
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-  renderPISummary('#pi-summary');
-  renderProjectsPreview('#project-preview', 3);
-  renderNewsPreview('#news-preview', 3);
-  renderTeamPreview('#team-preview');
-  renderPublicationsPreview('#pub-preview', 3);
-  renderOpenPositionsBadge('#open-positions-badge');
-</script>
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
 </body>
 </html>
