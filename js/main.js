@@ -57,7 +57,7 @@ async function renderPI(sel) {
     <div>
       <span class="section-label">Principal Investigator</span>
       <h2 style="margin-bottom:0.3rem;">${esc(pi.name)}</h2>
-      <p style="color:#1A5FA8;font-weight:bold;margin-bottom:0.8rem;">${esc(pi.title)}</p>
+      <p style="color:#9E1B32;font-weight:bold;margin-bottom:0.8rem;">${esc(pi.title)}</p>
       <p>${pi.bio}</p>
       ${pi.bio2 ? `<p>${pi.bio2}</p>` : ''}
       <ul class="pi-creds">
@@ -71,27 +71,73 @@ async function renderPI(sel) {
     </div>`;
 }
 
-/* ---- Student list (team page) ---- */
+/* ---- Student grid + click-to-expand modal (team page) ---- */
+let _studentData = [];
+
 async function renderStudents(sel) {
   const el = document.querySelector(sel);
   if (!el) return;
   const data = await loadJSON('data/team.json');
   if (!data) return;
-  el.innerHTML = data.students.map(s => `
-    <div class="student-item">
-      <div class="student-avatar">
+  _studentData = data.students;
+
+  el.innerHTML = _studentData.map((s, i) => `
+    <div class="team-card" data-idx="${i}">
+      <div class="team-card-photo">
         <img src="${s.photo}" alt="${esc(s.name)}" loading="lazy">
       </div>
-      <div>
-        <div class="student-name">${esc(s.name)}</div>
-        <div class="student-role">${esc(s.role)}</div>
-        <p class="student-focus">${esc(s.focus)}</p>
-        <div class="student-links">
-          ${s.links?.email ? `<a href="mailto:${s.links.email}">Email</a>` : ''}
-          ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>` : ''}
-        </div>
+      <div class="team-card-body">
+        <div class="team-card-name">${esc(s.name)}</div>
+        <div class="team-card-role">${esc(s.role)} (${esc(s.status || 'Ongoing')})</div>
+        <div class="team-card-hint">Click for research focus →</div>
       </div>
     </div>`).join('');
+
+  el.querySelectorAll('.team-card').forEach(card => {
+    card.addEventListener('click', () => openStudentModal(_studentData[card.dataset.idx]));
+  });
+
+  ensureModal();
+}
+
+function ensureModal() {
+  if (document.getElementById('team-modal')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'team-modal';
+  overlay.className = 'modal-overlay';
+  overlay.innerHTML = `
+    <div class="modal-box">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-photo"><img id="modal-photo-img" src="" alt=""></div>
+      <h3 id="modal-name"></h3>
+      <div class="modal-role" id="modal-role"></div>
+      <p id="modal-focus"></p>
+      <div class="modal-links" id="modal-links"></div>
+    </div>`;
+  document.body.appendChild(overlay);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeStudentModal(); });
+  overlay.querySelector('.modal-close').addEventListener('click', closeStudentModal);
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeStudentModal(); });
+}
+
+function openStudentModal(s) {
+  const overlay = document.getElementById('team-modal');
+  overlay.querySelector('#modal-photo-img').src = s.photo;
+  overlay.querySelector('#modal-photo-img').alt = s.name;
+  overlay.querySelector('#modal-name').textContent = s.name;
+  overlay.querySelector('#modal-role').textContent = `${s.role} (${s.status || 'Ongoing'})`;
+  overlay.querySelector('#modal-focus').textContent = s.focus;
+  const linksEl = overlay.querySelector('#modal-links');
+  linksEl.innerHTML = `
+    ${s.links?.email ? `<a href="mailto:${s.links.email}">Email</a>` : ''}
+    ${s.links?.scholar ? `<a href="${s.links.scholar}" target="_blank" rel="noopener">Google Scholar</a>` : ''}
+  `;
+  overlay.classList.add('open');
+}
+
+function closeStudentModal() {
+  const overlay = document.getElementById('team-modal');
+  if (overlay) overlay.classList.remove('open');
 }
 
 /* ---- Projects ---- */
