@@ -251,13 +251,14 @@ async function renderHighlights(sel) {
 
   el.innerHTML = data.map((h, i) => `
     <div class="highlight-card" data-idx="${i}">
-      <div class="highlight-img-wrap">
-        <img src="${h.image}" alt="${esc(h.alt || h.caption)}" loading="lazy">
-      </div>
       <div class="highlight-body">
         <div class="highlight-name">${esc(h.name)}</div>
+        <h3 class="highlight-title">${esc(h.title)}</h3>
         <p class="highlight-caption">${esc(h.caption)}</p>
         <div class="highlight-citation">${h.citation}</div>
+      </div>
+      <div class="highlight-img-wrap">
+        <img src="${h.image}" alt="${esc(h.alt || h.caption)}" loading="lazy">
       </div>
     </div>`).join('');
 
@@ -279,6 +280,7 @@ function ensureLightbox() {
       <img id="lightbox-img" src="" alt="">
       <div class="lightbox-info">
         <div class="highlight-name" id="lightbox-name"></div>
+        <h3 class="highlight-title" id="lightbox-title"></h3>
         <p id="lightbox-caption"></p>
         <div class="highlight-citation" id="lightbox-citation"></div>
       </div>
@@ -294,6 +296,7 @@ function openLightbox(h) {
   overlay.querySelector('#lightbox-img').src = h.image;
   overlay.querySelector('#lightbox-img').alt = h.alt || h.caption;
   overlay.querySelector('#lightbox-name').textContent = h.name;
+  overlay.querySelector('#lightbox-title').textContent = h.title;
   overlay.querySelector('#lightbox-caption').textContent = h.caption;
   overlay.querySelector('#lightbox-citation').innerHTML =
     h.link ? `${h.citation} — <a href="${h.link}" target="_blank" rel="noopener">View paper →</a>` : h.citation;
