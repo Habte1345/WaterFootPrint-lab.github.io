@@ -20,8 +20,8 @@
   "students": [
     {
       "name": "Habtamu Tamiru",
-      "role": "Ph.D. Student (2024)",
-      "focus": "His research focuses on advancing large-scale hydrologic prediction by integrating process-based hydrologic understanding, data assimilation, and machine learning. His work aims to improve the physical consistency, calibration, and reliability of streamflow simulations across diverse hydrologic systems, including applications in functional hydrologic modeling, continental-scale model calibration, and knowledge-guided evaluation of deep learning predictions. He is also developing a county-level national livestock water-use dataset under the USGS-funded CIROH project to support agricultural water-resource assessment and allocation.",
+      "role": "Ph.D. Student (Since 2024)",
+      "focus": "His research integrates hydrologic modeling, data assimilation, and machine learning to improve streamflow prediction and water-resource assessment. He also works on large-scale model calibration, knowledge-guided evaluation of deep learning models.",
       "photo": "assets/img/habtamu-tamiru.svg",
       "links": {
         "email": "habtamu@crimson.ua.edu",
