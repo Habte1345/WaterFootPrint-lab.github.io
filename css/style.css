@@ -209,7 +209,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .hero-stat-label {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  color: rgba(255,255,255,0.88);
+  color:  #ffffff;
   max-width: 600px;
   margin: 0 auto 0.6rem;
   line-height: 1.4;
@@ -217,7 +217,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .hero-stat-source {
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.55);
+  color:  #ffffff;
   font-style: italic;
   margin-top: 0.2rem;
 }
