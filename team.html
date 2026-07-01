@@ -6,6 +6,199 @@
 <title>Team — Water Footprint Lab</title>
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
+<style>
+/* =========================================================
+   PI — attractive full-width profile card
+   ========================================================= */
+
+/* Crimson banner that sits behind the photo */
+.pi-banner {
+  background: var(--crimson);
+  height: 180px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Card wrapper */
+.pi-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px -16px rgba(0,0,0,0.18);
+  overflow: hidden;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header area: photo + name block that overlaps the banner */
+.pi-card-header {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+  padding: 0 2.4rem;
+  margin-top: -70px;   /* pulls photo up over the banner */
+  flex-wrap: wrap;
+}
+
+.pi-avatar-wrap {
+  flex-shrink: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  overflow: hidden;
+  background: var(--gray-light);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.pi-avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pi-name-block {
+  padding-bottom: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+.pi-name-block h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+.pi-name-block .pi-title {
+  font-size: 0.95rem;
+  color: var(--crimson);
+  font-weight: bold;
+  margin-bottom: 0.1rem;
+}
+.pi-name-block .pi-uni {
+  font-size: 0.88rem;
+  color: var(--gray-mid);
+}
+
+/* Body: two-column grid — bio left, education right */
+.pi-card-body {
+  padding: 2rem 2.4rem 2.4rem;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2.4rem;
+  align-items: start;
+}
+@media (max-width: 720px) {
+  .pi-card-body { grid-template-columns: 1fr; }
+}
+
+.pi-bio-col h3, .pi-edu-col h3 {
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--crimson);
+  margin-bottom: 0.9rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--crimson);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pi-bio-col h3 svg, .pi-edu-col h3 svg {
+  width: 16px; height: 16px;
+}
+
+.pi-bio-col p {
+  font-size: 0.97rem;
+  color: var(--gray-dark);
+  line-height: 1.7;
+  margin-bottom: 0.9rem;
+}
+
+/* Education list */
+.pi-edu-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.pi-edu-item {
+  background: var(--gray-light);
+  border-radius: 5px;
+  padding: 0.9rem 1.1rem;
+  border-left: 4px solid var(--crimson);
+}
+.pi-edu-item .deg {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: var(--black);
+  margin-bottom: 0.15rem;
+}
+.pi-edu-item .inst {
+  font-size: 0.83rem;
+  color: var(--gray-mid);
+}
+
+/* Stats strip */
+.pi-stats {
+  display: flex;
+  gap: 0;
+  border-top: 1px solid var(--border);
+  margin: 0 2.4rem;
+}
+.pi-stat {
+  flex: 1;
+  text-align: center;
+  padding: 1.1rem 0.5rem;
+  border-right: 1px solid var(--border);
+}
+.pi-stat:last-child { border-right: none; }
+.pi-stat-num {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--crimson);
+  display: block;
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+.pi-stat-lbl {
+  font-size: 0.74rem;
+  color: var(--gray-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+@media (max-width: 500px) {
+  .pi-stats { flex-wrap: wrap; }
+  .pi-stat { min-width: 50%; }
+}
+
+/* Link buttons row */
+.pi-links-row {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  padding: 1.4rem 2.4rem 2rem;
+}
+.pi-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.88rem;
+  font-weight: bold;
+  padding: 0.55em 1.2em;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 2px solid var(--crimson);
+  color: var(--crimson);
+  background: var(--white);
+  transition: background 0.15s, color 0.15s;
+}
+.pi-link-btn:hover { background: var(--crimson); color: var(--white); }
+.pi-link-btn svg { width: 14px; height: 14px; }
+.pi-link-btn.primary { background: var(--crimson); color: var(--white); }
+.pi-link-btn.primary:hover { background: var(--crimson-dark); border-color: var(--crimson-dark); }
+</style>
 </head>
 <body>
 
@@ -39,25 +232,26 @@
 <main>
   <section class="page-hero">
     <div class="wrap">
-      <h1>Team members in the Water Footprint Lab</h1>
-      <!-- <p>Principal Investigator and Ph.D. researchers in the Water Footprint Lab</p> -->
+      <h1>Team</h1>
+      <p>Principal Investigator and Ph.D. researchers in the Water Footprint Lab</p>
     </div>
   </section>
 
-  <!-- PI — large, featured -->
+  <!-- PI — visually featured card -->
   <section class="section">
     <div class="wrap">
-      <div class="pi-block" id="pi-block">
-        <p class="state-msg">Loading…</p>
+      <span class="section-label">Principal Investigator</span>
+      <div class="pi-card" id="pi-card">
+        <p class="state-msg" style="padding:2rem;">Loading…</p>
       </div>
     </div>
   </section>
 
-  <!-- STUDENTS — 3x2 card grid -->
+  <!-- STUDENTS — 3x2 grid (unchanged) -->
   <section class="section section--shaded">
     <div class="wrap">
-      <!-- <span class="section-label">Ph.D. Researchers</span> -->
-      <h2>Current and Past Students</h2>
+      <span class="section-label">Ph.D. Researchers</span>
+      <h2>Current &amp; Former Students</h2>
       <div class="team-grid" id="student-grid">
         <p class="state-msg">Loading…</p>
       </div>
@@ -95,9 +289,105 @@
 
 <script src="js/main.js"></script>
 <script>
-  document.getElementById('yr').textContent = new Date().getFullYear();
-  renderPI('#pi-block');
-  renderStudents('#student-grid');
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+async function renderPICard() {
+  const el = document.getElementById('pi-card');
+  const data = await loadJSON('data/team.json');
+  if (!data) return;
+  const pi = data.pi;
+
+  el.innerHTML = `
+    <!-- Crimson banner -->
+    <div class="pi-banner"></div>
+
+    <!-- Photo + name overlapping the banner -->
+    <div class="pi-card-header">
+      <div class="pi-avatar-wrap">
+        <img src="${pi.photo}" alt="${pi.name}" loading="lazy">
+      </div>
+      <div class="pi-name-block">
+        <h2>${pi.name}</h2>
+        <div class="pi-title">Principal Investigator</div>
+        <div class="pi-uni">${pi.title}</div>
+      </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="pi-stats">
+      <div class="pi-stat">
+        <span class="pi-stat-num">70+</span>
+        <span class="pi-stat-lbl">Peer-reviewed papers</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">38,000+</span>
+        <span class="pi-stat-lbl">Citations</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">41</span>
+        <span class="pi-stat-lbl">h-index</span>
+      </div>
+      <div class="pi-stat">
+        <span class="pi-stat-num">2×</span>
+        <span class="pi-stat-lbl">Clarivate Highly Cited Researcher</span>
+      </div>
+    </div>
+
+    <!-- Bio (left) + Education (right) -->
+    <div class="pi-card-body">
+      <div class="pi-bio-col">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          Biography
+        </h3>
+        <p>${pi.bio}</p>
+        <p>${pi.bio2}</p>
+      </div>
+      <div class="pi-edu-col">
+        <h3>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1 2.7 3 6 3s6-2 6-3v-5.5"/></svg>
+          Education &amp; Affiliations
+        </h3>
+        <ul class="pi-edu-list">
+          <li class="pi-edu-item">
+            <div class="deg">Ph.D., Water Engineering &amp; Water Management</div>
+            <div class="inst">University of Twente, Netherlands · 2011</div>
+          </li>
+          <li class="pi-edu-item">
+            <div class="deg">M.Sc., Environmental Science &amp; Technology</div>
+            <div class="inst">UNESCO-IHE, Netherlands · 2005</div>
+          </li>
+          <li class="pi-edu-item">
+            <div class="deg">Affiliations</div>
+            <div class="inst">Center for Complex Hydrosystems Research · Center for Water Quality Research · Center for Sustainable Infrastructure</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Link buttons -->
+    <div class="pi-links-row">
+      <a class="pi-link-btn primary" href="${pi.links.profile}" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        University Profile
+      </a>
+      <a class="pi-link-btn" href="mailto:${pi.links.email}">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="m4 6 8 7 8-7"/></svg>
+        Email
+      </a>
+      <a class="pi-link-btn" href="https://scholar.google.com/citations?user=6TI3NIsAAAAJ&hl=en" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3 2 8l10 5 10-5-10-5Z"/><path d="M6 10.5V16c0 1 2.7 3 6 3s6-2 6-3v-5.5"/></svg>
+        Google Scholar
+      </a>
+      <a class="pi-link-btn" href="https://www.researchgate.net/profile/Mesfin-Mekonnen" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 3"/></svg>
+        ResearchGate
+      </a>
+    </div>`;
+}
+
+renderPICard();
+renderStudents('#student-grid');
 </script>
 </body>
 </html>
