@@ -94,7 +94,7 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 88px;
+  min-height: 110px;
 }
 
 .brand {
@@ -103,10 +103,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
   gap: 0.7rem;
   text-decoration: none;
 }
-.brand-mark { width: 64px; height: 64px; flex-shrink: 0; }
+.brand-mark { width: 90px; height: 90px; flex-shrink: 0; }
 .brand-name {
   font-family: var(--font-head);
-  font-size: 2.3rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--crimson);
   letter-spacing: -0.01em;
@@ -114,10 +114,10 @@ p  { margin-bottom: 1em; max-width: 72ch; color: var(--gray-dark); }
 }
 .brand-sub {
   font-family: var(--font-body);
-  font-size: 0.88rem;
+  font-size: 1.1rem;
   color: var(--gray-mid);
   display: block;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .nav-links {
