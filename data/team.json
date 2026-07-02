@@ -1,14 +1,14 @@
 {
   "pi": {
     "name": "Dr. Mesfin Mekonnen",
-    "title": "Assistant Professor, Civil, Construction & Environmental Engineering — The University of Alabama",
+    "title": "Assistant Professor, Civil, Construction & Environmental Engineering \u2014 The University of Alabama",
     "photo": "assets/img/mesfin-mekonnen.svg",
     "bio": "Dr. Mekonnen leads the Water Footprint Lab and the broader water security research group at the University of Alabama, which he joined in 2020. He holds a Ph.D. in Water Engineering and Management from the University of Twente (the Netherlands), and previously held positions at the Daugherty Water for Food Global Institute (University of Nebraska) and as a postdoctoral researcher at the University of Twente.",
-    "bio2": "His work focuses on the relationship between human and natural systems in freshwater use — mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
+    "bio2": "His work focuses on the relationship between human and natural systems in freshwater use \u2014 mapping where and why water footprints are largest, how usage practices affect water security for people and ecosystems, and how growing demand can be met without degrading the resource it depends on. He is a Clarivate Highly Cited Researcher and serves on the editorial board of Frontiers in Sustainable Food Systems.",
     "credentials": [
-      "Ph.D., Water Engineering & Water Management — University of Twente, 2011",
-      "M.Sc., Environmental Science & Technology — UNESCO-IHE, 2005",
-      "Affiliate, Center for Complex Hydrosystems Research · Center for Water Quality Research · Center for Sustainable Infrastructure"
+      "Ph.D., Water Engineering & Water Management \u2014 University of Twente, 2011",
+      "M.Sc., Environmental Science & Technology \u2014 UNESCO-IHE, 2005",
+      "Affiliate, Center for Complex Hydrosystems Research \u00b7 Center for Water Quality Research \u00b7 Center for Sustainable Infrastructure"
     ],
     "links": {
       "profile": "https://eng.ua.edu/eng-directory/dr-mesfin-mekonnen/",
@@ -16,7 +16,8 @@
       "linkedin": "",
       "email": "mesfin.mekonnen@ua.edu",
       "orcid": "",
-      "website": ""
+      "website": "",
+      "github": ""
     }
   },
   "students": [
@@ -29,8 +30,9 @@
         "email": "habtamu@crimson.ua.edu",
         "scholar": "https://scholar.google.com/citations?user=XXXX",
         "linkedin": "https://www.linkedin.com/in/habtamu-tamiru-hydrologist/",
-        "orcid": "",
-        "website": ""
+        "orcid": "https://orcid.org/0000-0002-4414-6664",
+        "website": "",
+        "github": "https://github.com/Habte1345"
       },
       "status": "Ongoing"
     },
@@ -44,7 +46,8 @@
         "scholar": "https://scholar.google.com/citations?user=X5Q2yt8AAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/swatantra-kumar-sharma-4960b6b9/",
         "orcid": "",
-        "website": ""
+        "website": "",
+        "github": ""
       },
       "status": "Ongoing"
     },
@@ -58,7 +61,8 @@
         "scholar": "https://scholar.google.com/citations?user=dW1UQNEAAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/betelhem-wondimneh-4aa37b131/",
         "orcid": "",
-        "website": ""
+        "website": "",
+        "github": ""
       },
       "status": "Graduated"
     },
@@ -72,7 +76,8 @@
         "scholar": "https://scholar.google.com/citations?user=MO6FVHQAAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/mahlet-melaku-kebede-1480769b/",
         "orcid": "",
-        "website": ""
+        "website": "",
+        "github": ""
       },
       "status": "Graduated"
     },
@@ -86,7 +91,8 @@
         "scholar": "https://scholar.google.com/citations?user=K_swzOkAAAAJ&hl=en",
         "linkedin": "https://www.linkedin.com/in/fitsume-teshome-w/",
         "orcid": "https://orcid.org/0000-0001-7859-3879",
-        "website": "https://zprivf.github.io/website/"
+        "website": "https://zprivf.github.io/website/",
+        "github": "https://github.com/Zprivf"
       },
       "status": "Graduated"
     }
